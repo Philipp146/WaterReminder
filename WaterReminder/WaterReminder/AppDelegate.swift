@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = createTabBar()
+//        window?.rootViewController = createTabBar()
+        window?.rootViewController = MasterViewController()
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
@@ -57,19 +58,19 @@ private extension AppDelegate {
         tabBarController.tabBar.tintColor = .white
         tabBarController.tabBar.isTranslucent = false
         tabBarController.tabBar.barTintColor = .mainColor
+        tabBarController.tabBar.layer.cornerRadius = 15
         addTabBarItems(to: tabBarController)
         return tabBarController
     }
     
     
     func createNavigationController() -> [UINavigationController] {
-        let rootViewController = MainViewController()
+        let rootViewController = MasterViewController()
         let navController = UINavigationController(rootViewController: rootViewController)
         navController.navigationBar.tintColor = .white
         navController.navigationBar.barTintColor = .mainColor
         navController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         navController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        navController.navigationBar.prefersLargeTitles = true
         return [navController]
     }
     

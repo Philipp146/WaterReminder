@@ -11,8 +11,8 @@ import UIKit
 enum AppImages {
     
     enum TabBarImages: String {
-        case mainSelected = "GlassSelected"
-        case mainUnselected = "GlassUnselected"
+        case mainSelected = "GlassTabBarItem"
+        case mainUnselected = "GlassTabBarItemUnselected"
         
         var image: UIImage? {
             return UIImage(named: rawValue)

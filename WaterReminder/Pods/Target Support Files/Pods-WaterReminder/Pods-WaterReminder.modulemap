@@ -1,0 +1,6 @@
+module Pods_WaterReminder {
+  umbrella header "Pods-WaterReminder-umbrella.h"
+
+  export *
+  module * { export * }
+}
