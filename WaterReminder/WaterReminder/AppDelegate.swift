@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = createTabBar()
-        window?.rootViewController = MasterViewController()
-        window?.backgroundColor = .white
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+////        window?.rootViewController = createTabBar()
+//        window?.rootViewController = MasterViewController()
+//        window?.backgroundColor = .white
+//        window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
@@ -52,31 +52,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
     
-    func createTabBar() -> UITabBarController {
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = createNavigationController()
-        tabBarController.tabBar.tintColor = .white
-        tabBarController.tabBar.isTranslucent = false
-        tabBarController.tabBar.barTintColor = .mainColor
-        tabBarController.tabBar.layer.cornerRadius = 15
-        addTabBarItems(to: tabBarController)
-        return tabBarController
-    }
-    
-    
-    func createNavigationController() -> [UINavigationController] {
-        let rootViewController = MasterViewController()
-        let navController = UINavigationController(rootViewController: rootViewController)
-        navController.navigationBar.tintColor = .white
-        navController.navigationBar.barTintColor = .mainColor
-        navController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        navController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        return [navController]
-    }
-    
-    func addTabBarItems(to tabBarController: UITabBarController) {
-        tabBarController.tabBar.items?[0].selectedImage = AppImages.TabBarImages.mainSelected.image
-        tabBarController.tabBar.items?[0].image = AppImages.TabBarImages.mainUnselected.image
-    }
+//    func createTabBar() -> UITabBarController {
+//        let tabBarController = UITabBarController()
+//        tabBarController.viewControllers = createNavigationController()
+//        tabBarController.tabBar.tintColor = .white
+//        tabBarController.tabBar.isTranslucent = false
+//        tabBarController.tabBar.barTintColor = .mainColor
+//        tabBarController.tabBar.layer.cornerRadius = 15
+//        addTabBarItems(to: tabBarController)
+//        return tabBarController
+//    }
+//    
+//    
+//    func createNavigationController() -> [UINavigationController] {
+//        let rootViewController = MasterViewController()
+//        let navController = UINavigationController(rootViewController: rootViewController)
+//        navController.navigationBar.tintColor = .white
+//        navController.navigationBar.barTintColor = .mainColor
+//        navController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+//        navController.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+//        return [navController]
+//    }
+//    
+//    func addTabBarItems(to tabBarController: UITabBarController) {
+//        tabBarController.tabBar.items?[0].selectedImage = AppImages.TabBarImages.mainSelected.image
+//        tabBarController.tabBar.items?[0].image = AppImages.TabBarImages.mainUnselected.image
+//    }
 }
 

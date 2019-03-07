@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="neq-XP-OG9">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Tab Bar View Controller-->
+        <scene sceneID="x86-Mz-o1s">
+            <objects>
+                <viewController id="neq-XP-OG9" customClass="CustomTabBarViewController" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i5z-Tc-TAC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amV-7c-vCo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-gC-9fc">
+                                <rect key="frame" x="8" y="690" width="359" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-wg-gEm">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="80"/>
+                                        <connections>
+                                            <action selector="openMain:" destination="neq-XP-OG9" eventType="touchUpInside" id="bbZ-8t-rUx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFP-eD-8lu">
+                                        <rect key="frame" x="119.66666666666666" y="0.0" width="119.66666666666666" height="80"/>
+                                        <connections>
+                                            <action selector="openMain:" destination="neq-XP-OG9" eventType="touchUpInside" id="E0e-SQ-F72"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBG-88-oeu">
+                                        <rect key="frame" x="239.33333333333334" y="0.0" width="119.66666666666666" height="80"/>
+                                        <connections>
+                                            <action selector="openMain:" destination="neq-XP-OG9" eventType="touchUpInside" id="Yl5-0E-7mc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ZUI-Ru-p89"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="amV-7c-vCo" firstAttribute="trailing" secondItem="cth-jv-mc5" secondAttribute="trailing" id="0G9-Af-Qgz"/>
+                            <constraint firstItem="amV-7c-vCo" firstAttribute="leading" secondItem="cth-jv-mc5" secondAttribute="leading" id="0Xs-x4-P8e"/>
+                            <constraint firstItem="cth-jv-mc5" firstAttribute="bottom" secondItem="gmd-gC-9fc" secondAttribute="bottom" constant="8" id="5Yy-St-VkM"/>
+                            <constraint firstAttribute="trailing" secondItem="gmd-gC-9fc" secondAttribute="trailing" constant="8" id="USB-vY-EAZ"/>
+                            <constraint firstItem="amV-7c-vCo" firstAttribute="top" secondItem="i5z-Tc-TAC" secondAttribute="top" id="ZNb-r4-8El"/>
+                            <constraint firstAttribute="bottom" secondItem="amV-7c-vCo" secondAttribute="bottom" id="fl6-tU-GUr"/>
+                            <constraint firstItem="gmd-gC-9fc" firstAttribute="leading" secondItem="cth-jv-mc5" secondAttribute="leading" constant="8" id="tOW-SL-EnL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cth-jv-mc5"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="amV-7c-vCo" id="xNz-aw-vBL"/>
+                        <outlet property="detailButton" destination="ZFP-eD-8lu" id="aIp-rK-LPM"/>
+                        <outlet property="mainButton" destination="Pab-wg-gEm" id="aou-Vr-k2c"/>
+                        <outlet property="profileButton" destination="hBG-88-oeu" id="7Lb-a7-cca"/>
+                        <outlet property="tabBarView" destination="gmd-gC-9fc" id="3sX-rR-1Vc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pj9-NR-mKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-3.6945812807881775"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="loK-Rj-txd">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="bjo-Iu-BYd" customClass="MainViewController" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j7j-Qi-Ta2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nxY-lu-ID5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXJ-9f-Pmo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="-4"/>
+        </scene>
+    </scenes>
+</document>
