@@ -1,1 +1,1 @@
-/Users/philipp/Projekte/iOS/WaterReminder/WaterReminder/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h
+../../../Target Support Files/SnapKit/SnapKit-umbrella.h
