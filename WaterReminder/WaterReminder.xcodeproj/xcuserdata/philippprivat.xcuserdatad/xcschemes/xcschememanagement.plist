@@ -7,7 +7,35 @@
 		<key>WaterReminder.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>WaterReminderTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>WaterReminderUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>17E8CEEB21D853160079B637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17E8CEFF21D853180079B637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17E8CF0A21D853180079B637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

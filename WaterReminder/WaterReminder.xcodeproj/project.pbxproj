@@ -20,7 +20,15 @@
 		17E8CF0521D853180079B637 /* WaterReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8CF0421D853180079B637 /* WaterReminderTests.swift */; };
 		17E8CF1021D853180079B637 /* WaterReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8CF0F21D853180079B637 /* WaterReminderUITests.swift */; };
 		17FF4587222DA8C0007B432C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FF4586222DA8C0007B432C /* Main.storyboard */; };
-		17FF4589222DBFA1007B432C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17FF4588222DBFA1007B432C /* MainViewController.swift */; };
+		1ADEA42422788CAA00E83D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42322788CAA00E83D59 /* ViewController.swift */; };
+		1ADEA42822788D6B00E83D59 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42622788D6B00E83D59 /* MainViewController.swift */; };
+		1ADEA42922788D6B00E83D59 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEA42722788D6B00E83D59 /* MainViewController.xib */; };
+		1ADEA4382278955E00E83D59 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA4372278955E00E83D59 /* Identifiers.swift */; };
+		1ADEA43A227895D200E83D59 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA439227895D200E83D59 /* UIFont.swift */; };
+		1ADEA43C2278990200E83D59 /* MainViewControllerCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA43B2278990100E83D59 /* MainViewControllerCollectionViewDataSource.swift */; };
+		1ADEA43E2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA43D2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift */; };
+		1AFF4C1422E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFF4C1222E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift */; };
+		1AFF4C1522E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AFF4C1322E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib */; };
 		23EF84352C71E90B8B49AB5E /* libPods-WaterReminder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 209B5C6578FBE5451D500724 /* libPods-WaterReminder.a */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +69,15 @@
 		17E8CF0F21D853180079B637 /* WaterReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderUITests.swift; sourceTree = "<group>"; };
 		17E8CF1121D853180079B637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17FF4586222DA8C0007B432C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		17FF4588222DBFA1007B432C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1ADEA42322788CAA00E83D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ADEA42622788D6B00E83D59 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1ADEA42722788D6B00E83D59 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1ADEA4372278955E00E83D59 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		1ADEA439227895D200E83D59 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		1ADEA43B2278990100E83D59 /* MainViewControllerCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		1ADEA43D2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		1AFF4C1222E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		1AFF4C1322E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiquidItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		209B5C6578FBE5451D500724 /* libPods-WaterReminder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WaterReminder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA94D1F4903EC2D8F6BD394 /* Pods-WaterReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterReminder.debug.xcconfig"; path = "Target Support Files/Pods-WaterReminder/Pods-WaterReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		F2B12013178DDA8116D78A5F /* Pods-WaterReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterReminder.release.xcconfig"; path = "Target Support Files/Pods-WaterReminder/Pods-WaterReminder.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,8 +112,11 @@
 		172AC8BE21E3D94300DAA2B7 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				172AC8C621E3E8F400DAA2B7 /* Extensions */,
 				172AC8C021E3D96D00DAA2B7 /* Images.swift */,
 				172AC8C421E3E5A000DAA2B7 /* Colors.swift */,
+				1ADEA42322788CAA00E83D59 /* ViewController.swift */,
+				1ADEA4372278955E00E83D59 /* Identifiers.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 			children = (
 				172AC8C721E3E90000DAA2B7 /* UIColor.swift */,
 				179E473321F68CAB00421D4C /* UIStackView.swift */,
+				1ADEA439227895D200E83D59 /* UIFont.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -144,17 +164,16 @@
 		17E8CEEE21D853160079B637 /* WaterReminder */ = {
 			isa = PBXGroup;
 			children = (
-				172AC8C921E405D800DAA2B7 /* Ressources */,
-				172AC8C621E3E8F400DAA2B7 /* Extensions */,
-				172AC8BE21E3D94300DAA2B7 /* Constants */,
 				17E8CEEF21D853160079B637 /* AppDelegate.swift */,
-				17E8CEF121D853160079B637 /* CustomTabBarViewController.swift */,
-				17FF4588222DBFA1007B432C /* MainViewController.swift */,
-				17FF4586222DA8C0007B432C /* Main.storyboard */,
 				172AC8C221E3E35B00DAA2B7 /* Assets.xcassets */,
-				17E8CEF821D853170079B637 /* LaunchScreen.storyboard */,
+				1ADEA42F2278914C00E83D59 /* Cells */,
+				172AC8BE21E3D94300DAA2B7 /* Constants */,
+				1ADEA4362278922400E83D59 /* Protocols */,
 				17E8CEFB21D853170079B637 /* Info.plist */,
-				1783BA1122312C4300ADD904 /* CustomStylable.swift */,
+				17E8CEF821D853170079B637 /* LaunchScreen.storyboard */,
+				17FF4586222DA8C0007B432C /* Main.storyboard */,
+				172AC8C921E405D800DAA2B7 /* Ressources */,
+				1ADEA42522788D2500E83D59 /* ViewController */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -175,6 +194,43 @@
 				17E8CF1121D853180079B637 /* Info.plist */,
 			);
 			path = WaterReminderUITests;
+			sourceTree = "<group>";
+		};
+		1ADEA42522788D2500E83D59 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEA42B22788EE300E83D59 /* Main */,
+				17E8CEF121D853160079B637 /* CustomTabBarViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1ADEA42B22788EE300E83D59 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1ADEA42622788D6B00E83D59 /* MainViewController.swift */,
+				1ADEA43B2278990100E83D59 /* MainViewControllerCollectionViewDataSource.swift */,
+				1ADEA43D2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift */,
+				1ADEA42722788D6B00E83D59 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1ADEA42F2278914C00E83D59 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1AFF4C1222E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift */,
+				1AFF4C1322E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1ADEA4362278922400E83D59 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1783BA1122312C4300ADD904 /* CustomStylable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		6A37EB75FF54B43F7487BDD3 /* Frameworks */ = {
@@ -299,8 +355,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AFF4C1522E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib in Resources */,
 				172AC8CB21E4086300DAA2B7 /* GrandHotel-Regular.otf in Resources */,
 				172AC8C321E3E35B00DAA2B7 /* Assets.xcassets in Resources */,
+				1ADEA42922788D6B00E83D59 /* MainViewController.xib in Resources */,
 				17E8CEFA21D853170079B637 /* LaunchScreen.storyboard in Resources */,
 				17FF4587222DA8C0007B432C /* Main.storyboard in Resources */,
 			);
@@ -352,14 +410,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17FF4589222DBFA1007B432C /* MainViewController.swift in Sources */,
 				17E8CEF221D853160079B637 /* CustomTabBarViewController.swift in Sources */,
 				1783BA1222312C4300ADD904 /* CustomStylable.swift in Sources */,
+				1ADEA42422788CAA00E83D59 /* ViewController.swift in Sources */,
 				179E473421F68CAC00421D4C /* UIStackView.swift in Sources */,
 				172AC8C521E3E5A000DAA2B7 /* Colors.swift in Sources */,
 				172AC8C121E3D96D00DAA2B7 /* Images.swift in Sources */,
+				1ADEA42822788D6B00E83D59 /* MainViewController.swift in Sources */,
+				1ADEA43A227895D200E83D59 /* UIFont.swift in Sources */,
+				1ADEA43E2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift in Sources */,
 				17E8CEF021D853160079B637 /* AppDelegate.swift in Sources */,
 				172AC8C821E3E90000DAA2B7 /* UIColor.swift in Sources */,
+				1AFF4C1422E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift in Sources */,
+				1ADEA43C2278990200E83D59 /* MainViewControllerCollectionViewDataSource.swift in Sources */,
+				1ADEA4382278955E00E83D59 /* Identifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +591,7 @@
 			baseConfigurationReference = 8AA94D1F4903EC2D8F6BD394 /* Pods-WaterReminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C9VJFZS7C;
 				INFOPLIST_FILE = WaterReminder/Info.plist;
@@ -536,6 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = philipp.WaterReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,6 +612,7 @@
 			baseConfigurationReference = F2B12013178DDA8116D78A5F /* Pods-WaterReminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C9VJFZS7C;
 				INFOPLIST_FILE = WaterReminder/Info.plist;
@@ -555,6 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = philipp.WaterReminder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

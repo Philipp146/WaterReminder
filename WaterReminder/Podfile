@@ -5,7 +5,9 @@ target ’WaterReminder’ do
     pod 'RxSwift’,          ’~> 4.0', inhibit_warnings: true
     pod 'RxCocoa',          '~> 4.0'
     pod 'RxAtomic',         '~> 4.0', :modular_headers => true
-    
+    pod 'Hero',             '~> 1.4.0'
+
+
 #add if you add a target for testing
 #target 'WaterReminderTests' do
     #pod 'RxBlocking', '~> 4.0'
