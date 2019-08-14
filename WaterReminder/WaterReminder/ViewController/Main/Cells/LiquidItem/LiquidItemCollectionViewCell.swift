@@ -18,7 +18,7 @@ class LiquidItemCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         self.contentView.layer.cornerRadius = 4
         self.contentView.clipsToBounds = true
-        name.font = UIFont.regular(with: .tiny)
+        name.font = UIFont.regular(with: .small)
         bottomBackground.backgroundColor = .white
         backgroundImage.image = UIImage(named: "GlassSelected")
         // Initialization code

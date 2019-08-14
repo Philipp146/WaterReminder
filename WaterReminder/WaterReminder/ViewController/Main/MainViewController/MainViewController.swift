@@ -10,6 +10,7 @@ import UIKit
 
 class MainViewController: UIViewController, CustomStylable {
     
+    @IBOutlet weak var statisticsView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var waterItemsCollectionView: UICollectionView!
     
@@ -32,11 +33,13 @@ class MainViewController: UIViewController, CustomStylable {
         titleLabel.text = "Drink up!"
         titleLabel.font = .regular(with: .huge)
     }
+
     
     private func setupCollectionView() {
         waterItemsCollectionView.backgroundColor = .clear
         waterItemsCollectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
         waterItemsCollectionView.register(UINib(nibName: "LiquidItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifiers.Cells.waterItemCell)
+        waterItemsCollectionView.register(UINib(nibName: "StatisticCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifiers.Cells.statisticCell)
         collectionViewDelegate = MainViewControllerCollectionViewDelegate()
         collectionViewDataSource = MainViewControllerCollectionViewDataSource()
         waterItemsCollectionView.delegate = collectionViewDelegate!

@@ -17,10 +17,10 @@ class CustomTabBarViewController: UIViewController, CustomStylable {
     @IBOutlet private weak var profileButton: UIButton?
     @IBOutlet private weak var containerView: UIView?
     
-    var mainViewController: MainViewController?
-    var detailViewController: UIViewController?
-    var profileViewController: UIViewController?
-    var viewControllers: [UIViewController?]?
+    private var mainViewController: MainViewController?
+    private var detailViewController: UIViewController?
+    private var profileViewController: UIViewController?
+    private var viewControllers: [UIViewController?]?
     
     private var selectedIndex = 0
     
@@ -114,6 +114,13 @@ class CustomTabBarViewController: UIViewController, CustomStylable {
         detailButton?.tintColor = .lightGray
         profileButton?.tintColor = .lightGray
         sender.tintColor = .mainColor
+    }
+    
+    func getCurrentViewController() -> UIViewController? {
+        guard let viewControllers = viewControllers, let vc = viewControllers[selectedIndex] else {
+            return UIViewController()
+        }
+        return vc
     }
 }
 

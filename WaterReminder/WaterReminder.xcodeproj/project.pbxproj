@@ -20,6 +20,11 @@
 		17E8CF0521D853180079B637 /* WaterReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8CF0421D853180079B637 /* WaterReminderTests.swift */; };
 		17E8CF1021D853180079B637 /* WaterReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E8CF0F21D853180079B637 /* WaterReminderUITests.swift */; };
 		17FF4587222DA8C0007B432C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17FF4586222DA8C0007B432C /* Main.storyboard */; };
+		1A2116E2230212C500C45D1C /* LiquidDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2116E0230212C500C45D1C /* LiquidDetailViewController.swift */; };
+		1A2116E3230212C500C45D1C /* LiquidDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2116E1230212C500C45D1C /* LiquidDetailViewController.xib */; };
+		1A2116E62302EDF100C45D1C /* StatisticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2116E42302EDF100C45D1C /* StatisticCollectionViewCell.swift */; };
+		1A2116E72302EDF100C45D1C /* StatisticCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2116E52302EDF100C45D1C /* StatisticCollectionViewCell.xib */; };
+		1A2116EE2302FB2500C45D1C /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2116ED2302FB2500C45D1C /* StatisticView.swift */; };
 		1ADEA42422788CAA00E83D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42322788CAA00E83D59 /* ViewController.swift */; };
 		1ADEA42822788D6B00E83D59 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42622788D6B00E83D59 /* MainViewController.swift */; };
 		1ADEA42922788D6B00E83D59 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEA42722788D6B00E83D59 /* MainViewController.xib */; };
@@ -69,6 +74,11 @@
 		17E8CF0F21D853180079B637 /* WaterReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterReminderUITests.swift; sourceTree = "<group>"; };
 		17E8CF1121D853180079B637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17FF4586222DA8C0007B432C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1A2116E0230212C500C45D1C /* LiquidDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidDetailViewController.swift; sourceTree = "<group>"; };
+		1A2116E1230212C500C45D1C /* LiquidDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiquidDetailViewController.xib; sourceTree = "<group>"; };
+		1A2116E42302EDF100C45D1C /* StatisticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A2116E52302EDF100C45D1C /* StatisticCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCollectionViewCell.xib; sourceTree = "<group>"; };
+		1A2116ED2302FB2500C45D1C /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		1ADEA42322788CAA00E83D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1ADEA42622788D6B00E83D59 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1ADEA42722788D6B00E83D59 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -166,7 +176,6 @@
 			children = (
 				17E8CEEF21D853160079B637 /* AppDelegate.swift */,
 				172AC8C221E3E35B00DAA2B7 /* Assets.xcassets */,
-				1ADEA42F2278914C00E83D59 /* Cells */,
 				172AC8BE21E3D94300DAA2B7 /* Constants */,
 				1ADEA4362278922400E83D59 /* Protocols */,
 				17E8CEFB21D853170079B637 /* Info.plist */,
@@ -174,6 +183,7 @@
 				17FF4586222DA8C0007B432C /* Main.storyboard */,
 				172AC8C921E405D800DAA2B7 /* Ressources */,
 				1ADEA42522788D2500E83D59 /* ViewController */,
+				1A2116EC2302FAC600C45D1C /* View */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -196,16 +206,25 @@
 			path = WaterReminderUITests;
 			sourceTree = "<group>";
 		};
-		1ADEA42522788D2500E83D59 /* ViewController */ = {
+		1A2116E82302EDF500C45D1C /* LiquidItem */ = {
 			isa = PBXGroup;
 			children = (
-				1ADEA42B22788EE300E83D59 /* Main */,
-				17E8CEF121D853160079B637 /* CustomTabBarViewController.swift */,
+				1AFF4C1222E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift */,
+				1AFF4C1322E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib */,
 			);
-			path = ViewController;
+			path = LiquidItem;
 			sourceTree = "<group>";
 		};
-		1ADEA42B22788EE300E83D59 /* Main */ = {
+		1A2116E92302EDFC00C45D1C /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				1A2116E42302EDF100C45D1C /* StatisticCollectionViewCell.swift */,
+				1A2116E52302EDF100C45D1C /* StatisticCollectionViewCell.xib */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		1A2116EA2302FA8900C45D1C /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
 				1ADEA42622788D6B00E83D59 /* MainViewController.swift */,
@@ -213,16 +232,52 @@
 				1ADEA43D2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift */,
 				1ADEA42722788D6B00E83D59 /* MainViewController.xib */,
 			);
-			path = Main;
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
-		1ADEA42F2278914C00E83D59 /* Cells */ = {
+		1A2116EB2302FAA600C45D1C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				1AFF4C1222E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift */,
-				1AFF4C1322E0E15600D7A9D3 /* LiquidItemCollectionViewCell.xib */,
+				1A2116E92302EDFC00C45D1C /* Statistic */,
+				1A2116E82302EDF500C45D1C /* LiquidItem */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		1A2116EC2302FAC600C45D1C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A2116ED2302FB2500C45D1C /* StatisticView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A2E8743230202260024A453 /* LiquidDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1A2116E0230212C500C45D1C /* LiquidDetailViewController.swift */,
+				1A2116E1230212C500C45D1C /* LiquidDetailViewController.xib */,
+			);
+			path = LiquidDetail;
+			sourceTree = "<group>";
+		};
+		1ADEA42522788D2500E83D59 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				17E8CEF121D853160079B637 /* CustomTabBarViewController.swift */,
+				1A2E8743230202260024A453 /* LiquidDetail */,
+				1ADEA42B22788EE300E83D59 /* Main */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1ADEA42B22788EE300E83D59 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1A2116EB2302FAA600C45D1C /* Cells */,
+				1A2116EA2302FA8900C45D1C /* MainViewController */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		1ADEA4362278922400E83D59 /* Protocols */ = {
@@ -359,8 +414,10 @@
 				172AC8CB21E4086300DAA2B7 /* GrandHotel-Regular.otf in Resources */,
 				172AC8C321E3E35B00DAA2B7 /* Assets.xcassets in Resources */,
 				1ADEA42922788D6B00E83D59 /* MainViewController.xib in Resources */,
+				1A2116E3230212C500C45D1C /* LiquidDetailViewController.xib in Resources */,
 				17E8CEFA21D853170079B637 /* LaunchScreen.storyboard in Resources */,
 				17FF4587222DA8C0007B432C /* Main.storyboard in Resources */,
+				1A2116E72302EDF100C45D1C /* StatisticCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E8CEF221D853160079B637 /* CustomTabBarViewController.swift in Sources */,
+				1A2116E62302EDF100C45D1C /* StatisticCollectionViewCell.swift in Sources */,
 				1783BA1222312C4300ADD904 /* CustomStylable.swift in Sources */,
 				1ADEA42422788CAA00E83D59 /* ViewController.swift in Sources */,
 				179E473421F68CAC00421D4C /* UIStackView.swift in Sources */,
@@ -418,9 +476,11 @@
 				172AC8C121E3D96D00DAA2B7 /* Images.swift in Sources */,
 				1ADEA42822788D6B00E83D59 /* MainViewController.swift in Sources */,
 				1ADEA43A227895D200E83D59 /* UIFont.swift in Sources */,
+				1A2116E2230212C500C45D1C /* LiquidDetailViewController.swift in Sources */,
 				1ADEA43E2278991100E83D59 /* MainViewControllerCollectionViewDelegate.swift in Sources */,
 				17E8CEF021D853160079B637 /* AppDelegate.swift in Sources */,
 				172AC8C821E3E90000DAA2B7 /* UIColor.swift in Sources */,
+				1A2116EE2302FB2500C45D1C /* StatisticView.swift in Sources */,
 				1AFF4C1422E0E15600D7A9D3 /* LiquidItemCollectionViewCell.swift in Sources */,
 				1ADEA43C2278990200E83D59 /* MainViewControllerCollectionViewDataSource.swift in Sources */,
 				1ADEA4382278955E00E83D59 /* Identifiers.swift in Sources */,
@@ -595,6 +655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C9VJFZS7C;
 				INFOPLIST_FILE = WaterReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,6 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C9VJFZS7C;
 				INFOPLIST_FILE = WaterReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

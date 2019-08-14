@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="neq-XP-OG9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="neq-XP-OG9">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-gC-9fc">
-                                <rect key="frame" x="8" y="690" width="359" height="80"/>
+                                <rect key="frame" x="8" y="694" width="359" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pab-wg-gEm">
                                         <rect key="frame" x="0.0" y="0.0" width="119.66666666666667" height="80"/>
@@ -52,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="amV-7c-vCo" firstAttribute="trailing" secondItem="cth-jv-mc5" secondAttribute="trailing" id="0G9-Af-Qgz"/>
                             <constraint firstItem="amV-7c-vCo" firstAttribute="leading" secondItem="cth-jv-mc5" secondAttribute="leading" id="0Xs-x4-P8e"/>
-                            <constraint firstItem="cth-jv-mc5" firstAttribute="bottom" secondItem="gmd-gC-9fc" secondAttribute="bottom" constant="8" id="5Yy-St-VkM"/>
+                            <constraint firstItem="cth-jv-mc5" firstAttribute="bottom" secondItem="gmd-gC-9fc" secondAttribute="bottom" constant="4" id="5Yy-St-VkM"/>
                             <constraint firstAttribute="trailing" secondItem="gmd-gC-9fc" secondAttribute="trailing" constant="8" id="USB-vY-EAZ"/>
                             <constraint firstItem="amV-7c-vCo" firstAttribute="top" secondItem="i5z-Tc-TAC" secondAttribute="top" id="ZNb-r4-8El"/>
                             <constraint firstAttribute="bottom" secondItem="amV-7c-vCo" secondAttribute="bottom" id="fl6-tU-GUr"/>

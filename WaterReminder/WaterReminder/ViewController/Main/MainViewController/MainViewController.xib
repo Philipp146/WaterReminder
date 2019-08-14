@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fQe-aU-Ooh">
-                    <rect key="frame" x="8" y="93.5" width="398" height="760.5"/>
+                    <rect key="frame" x="8" y="105.5" width="398" height="790.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RAS-Es-mhN">
                         <size key="itemSize" width="50" height="50"/>
@@ -41,15 +41,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fQe-aU-Ooh" secondAttribute="bottom" constant="8" id="0pa-Gc-tOO"/>
+                <constraint firstAttribute="bottom" secondItem="fQe-aU-Ooh" secondAttribute="bottom" id="0pa-Gc-tOO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fQe-aU-Ooh" secondAttribute="trailing" constant="8" id="EWn-ul-sih"/>
                 <constraint firstItem="fQe-aU-Ooh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="Igu-nV-4Dd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7pX-s8-rND" secondAttribute="trailing" constant="16" id="df8-Ro-e9W"/>
                 <constraint firstItem="7pX-s8-rND" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="ezO-m0-hxz"/>
-                <constraint firstItem="fQe-aU-Ooh" firstAttribute="top" secondItem="7pX-s8-rND" secondAttribute="bottom" constant="8" id="gEY-FO-kab"/>
                 <constraint firstItem="7pX-s8-rND" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hyO-wq-3JP"/>
+                <constraint firstItem="fQe-aU-Ooh" firstAttribute="top" secondItem="7pX-s8-rND" secondAttribute="bottom" constant="20" id="oIH-AV-0Co"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
         </view>
     </objects>
 </document>

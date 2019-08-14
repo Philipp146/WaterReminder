@@ -12,6 +12,7 @@ struct Identifiers {
     
     struct Cells {
         static let waterItemCell = "LiquidItemCell"
+        static let statisticCell = "StatisticCell"
     }
     
     struct Fonts {

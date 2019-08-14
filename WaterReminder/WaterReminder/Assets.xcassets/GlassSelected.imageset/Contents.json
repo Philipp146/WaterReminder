@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "GlassSelected.png",
+      "filename" : "4299188-512.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "GlassSelected@2x.png",
+      "filename" : "4299188-513.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "GlassSelected@3x.png",
+      "filename" : "4299188-514.png",
       "scale" : "3x"
     }
   ],
