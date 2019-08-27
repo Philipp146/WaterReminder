@@ -14,7 +14,7 @@ class MainViewControllerCollectionViewDelegate: NSObject, UICollectionViewDelega
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
-            return CGSize(width: collectionView.bounds.width, height: 120)
+            return CGSize(width: collectionView.bounds.width, height: 150)
         } else {
             let itemWidth = (collectionView.bounds.width / numberOfItemsInRow) - margins
             return CGSize(width: itemWidth, height: itemWidth)

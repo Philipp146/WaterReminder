@@ -10,7 +10,6 @@ import UIKit
 
 class MainViewController: UIViewController, CustomStylable {
     
-    @IBOutlet weak var statisticsView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var waterItemsCollectionView: UICollectionView!
     
@@ -21,6 +20,10 @@ class MainViewController: UIViewController, CustomStylable {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setupStatisticsView()
     }
     
     private func setup() {
@@ -44,5 +47,12 @@ class MainViewController: UIViewController, CustomStylable {
         collectionViewDataSource = MainViewControllerCollectionViewDataSource()
         waterItemsCollectionView.delegate = collectionViewDelegate!
         waterItemsCollectionView.dataSource = collectionViewDataSource!
+    }
+    
+    private func setupStatisticsView() {
+        guard let cell = waterItemsCollectionView.cellForItem(at: IndexPath(row: 0, section: 0)) as? StatisticCollectionViewCell else {
+            return
+        }
+        cell.percentages = [30,70]
     }
 }

@@ -10,14 +10,18 @@ import UIKit
 
 class StatisticCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var todaysStatisticView: UIView!
-    @IBOutlet weak var weeklyStatisticView: UIView!
+    @IBOutlet weak var todaysStatisticView: StatisticView!
+    @IBOutlet weak var weeklyStatisticView: StatisticView!
+    var percentages: [Double]! {
+        didSet {
+            setupStatisticViews()
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        setup()
         // Initialization code
+        setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,9 +40,11 @@ class StatisticCollectionViewCell: UICollectionViewCell {
         contentView.backgroundColor = .clear
         todaysStatisticView.backgroundColor = .clear
         weeklyStatisticView.backgroundColor = .clear
-        todaysPercentage.font = UIFont.regular(with: .normal)
-        
-        weeklyPercentage.font = UIFont.regular(with: .normal)
+    }
+    
+    private func setupStatisticViews() {
+        todaysStatisticView.percentage = percentages[0]
+        weeklyStatisticView.percentage = percentages[1]
     }
     
     
