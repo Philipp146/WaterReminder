@@ -30,13 +30,10 @@ class MainViewControllerCollectionViewDelegate: NSObject, UICollectionViewDelega
             return
         }
         let detailVC = LiquidDetailViewController(nibName: "LiquidDetailViewController", bundle: nil)
-        guard let tabBarVC = collectionView.window?.rootViewController as? CustomTabBarViewController else {
-            return
-        }
-        guard let mainVC = tabBarVC.getCurrentViewController() else {
-            return
-        }
-        guard let name = cell.name.text else {
+        let tabBarVC = collectionView.window?.rootViewController as? CustomTabBarViewController
+        guard let _tabBarVC = tabBarVC,
+            let mainVC = _tabBarVC.getCurrentViewController(),
+            let name = cell.name.text else {
             return
         }
         detailVC.viewModel = LiquidDetailViewModel(liquidName: name)

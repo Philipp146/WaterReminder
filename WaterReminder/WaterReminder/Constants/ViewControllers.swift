@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct ViewController {
+struct ViewControllers {
     
     static var main: MainViewController {
         return MainViewController(nibName: Identifiers.ViewController.main, bundle: nil)

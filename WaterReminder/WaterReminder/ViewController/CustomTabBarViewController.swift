@@ -30,7 +30,7 @@ class CustomTabBarViewController: UIViewController, CustomStylable {
     }
     
     private func setupViewController() {
-        mainViewController = ViewController.main
+        mainViewController = ViewControllers.main
         detailViewController = UIViewController()
         profileViewController = UIViewController()
         viewControllers = [mainViewController, detailViewController, profileViewController]

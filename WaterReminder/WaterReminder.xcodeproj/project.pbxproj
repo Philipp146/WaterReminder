@@ -25,7 +25,7 @@
 		1A2116E62302EDF100C45D1C /* StatisticCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2116E42302EDF100C45D1C /* StatisticCollectionViewCell.swift */; };
 		1A2116E72302EDF100C45D1C /* StatisticCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2116E52302EDF100C45D1C /* StatisticCollectionViewCell.xib */; };
 		1A2116EE2302FB2500C45D1C /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2116ED2302FB2500C45D1C /* StatisticView.swift */; };
-		1ADEA42422788CAA00E83D59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42322788CAA00E83D59 /* ViewController.swift */; };
+		1ADEA42422788CAA00E83D59 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42322788CAA00E83D59 /* ViewControllers.swift */; };
 		1ADEA42822788D6B00E83D59 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA42622788D6B00E83D59 /* MainViewController.swift */; };
 		1ADEA42922788D6B00E83D59 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADEA42722788D6B00E83D59 /* MainViewController.xib */; };
 		1ADEA4382278955E00E83D59 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADEA4372278955E00E83D59 /* Identifiers.swift */; };
@@ -79,7 +79,7 @@
 		1A2116E42302EDF100C45D1C /* StatisticCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A2116E52302EDF100C45D1C /* StatisticCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticCollectionViewCell.xib; sourceTree = "<group>"; };
 		1A2116ED2302FB2500C45D1C /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
-		1ADEA42322788CAA00E83D59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1ADEA42322788CAA00E83D59 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
 		1ADEA42622788D6B00E83D59 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1ADEA42722788D6B00E83D59 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		1ADEA4372278955E00E83D59 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				172AC8C621E3E8F400DAA2B7 /* Extensions */,
 				172AC8C021E3D96D00DAA2B7 /* Images.swift */,
 				172AC8C421E3E5A000DAA2B7 /* Colors.swift */,
-				1ADEA42322788CAA00E83D59 /* ViewController.swift */,
+				1ADEA42322788CAA00E83D59 /* ViewControllers.swift */,
 				1ADEA4372278955E00E83D59 /* Identifiers.swift */,
 			);
 			path = Constants;
@@ -470,7 +470,7 @@
 				17E8CEF221D853160079B637 /* CustomTabBarViewController.swift in Sources */,
 				1A2116E62302EDF100C45D1C /* StatisticCollectionViewCell.swift in Sources */,
 				1783BA1222312C4300ADD904 /* CustomStylable.swift in Sources */,
-				1ADEA42422788CAA00E83D59 /* ViewController.swift in Sources */,
+				1ADEA42422788CAA00E83D59 /* ViewControllers.swift in Sources */,
 				179E473421F68CAC00421D4C /* UIStackView.swift in Sources */,
 				172AC8C521E3E5A000DAA2B7 /* Colors.swift in Sources */,
 				172AC8C121E3D96D00DAA2B7 /* Images.swift in Sources */,
@@ -655,7 +655,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C9VJFZS7C;
 				INFOPLIST_FILE = WaterReminder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,7 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3C9VJFZS7C;
 				INFOPLIST_FILE = WaterReminder/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
