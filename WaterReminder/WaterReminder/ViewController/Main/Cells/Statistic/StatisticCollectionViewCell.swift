@@ -34,6 +34,7 @@ class StatisticCollectionViewCell: UICollectionViewCell {
     
     private func setup() {
         setupUI()
+        setupRecognizer()
     }
     
     private func setupUI() {
@@ -45,6 +46,15 @@ class StatisticCollectionViewCell: UICollectionViewCell {
     private func setupStatisticViews() {
         todaysStatisticView.percentage = percentages[0]
         weeklyStatisticView.percentage = percentages[1]
+    }
+    
+    private func setupRecognizer() {
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateViews)))
+    }
+    
+    @objc private func animateViews() {
+        todaysStatisticView.animate()
+        weeklyStatisticView.animate()
     }
     
     
